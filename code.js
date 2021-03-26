@@ -50,7 +50,8 @@ window.addEventListener("paste", function(e){
                 // Update dimensions of the canvas with the dimensions of the image
                 canvas.width = this.width;
                 canvas.height = this.height;
-
+		    
+		alert("pasting image of " + this.width + " " + this.height);
                 // Draw the image
                 ctx.drawImage(img, 0, 0);
             };
